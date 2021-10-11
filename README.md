@@ -28,6 +28,8 @@ JSON threat protection is terms that describe the way to minimize the risk from 
 by defining few limits on the json structure like length and depth validation
  on a json, and helps protect your applications from such intrusions.
 
+ There are situations where you do not want to parse the JSON, but do want to ensure that the JSON is not going to cause a problem. Such as an API Gateway. It would be a PAIN for the gateway to have to know all JSON schema of all services it is protecting. There are XML validators that perform similar functions.
+
 ### Getting Started
 Installing
 To start using gojtp, install Go and run go get:
